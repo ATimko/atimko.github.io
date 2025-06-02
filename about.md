@@ -53,7 +53,7 @@ permalink: /about/
         Business Data Analytics
     </h1>
   <div style="height: 40px;"></div>
-      <p>I thought it was a interesting minor to take and it actually ended up working really well for me. Data management class helped me understand and derust on SQL as well as learning about relational schemas, ER diagrams and ACCESS. Which helped me understand more in Database systems</p>
+      <p>I chose the minor because I thought it would be interesting, and it ended up being a great decision. I also earned a Data Analytics Certification back in 2020, which really helped prepare me for my Data Management class in 2025. It allowed me to refresh my SQL skills and deepen my understanding of relational schemas, ER diagrams, and Microsoft Access. This foundation has been especially valuable for my current work developing a messaging application in my Programming Database Systems course.</p>
   </div>
 </div>
 

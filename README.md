@@ -1,6 +1,11 @@
 
 # Portfoilio Project
 
+[![BootStrap](https://img.shields.io/badge/Bootstrap%20-5.3.6-brightgreen.svg?style=flat)](https://getbootstrap.com/)
+[![Ruby](https://img.shields.io/badge/Ruby%20-3.5.0-brightgreen.svg?style=flat)](https://www.ruby-lang.org/en/downloads/)
+[![RubyGems](https://img.shields.io/badge/RubyGems%20-12.2.0-brightgreen.svg?style=flat)](https://rubygems.org/pages/download)
+[![Jekyll](https://img.shields.io/badge/Jekyll%20-2.2.0-brightgreen.svg?style=flat)](https://jekyllrb.com/)
+
 Created using [Bootstrap 5](https://getbootstrap.com/) using a template for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
 
 * A full Bootstrap 5 theme usable both on Github Pages and with a standalone Jekyll.
@@ -27,3 +32,5 @@ Created using [Bootstrap 5](https://getbootstrap.com/) using a template for [Git
 * If there's still issues you can run the command `gem update --system` if RubyGems had updated
 
 * Another problem can be from not having the gem file not being located doing `sudo gem install jekyll` and `sudo gem install jekyll bundler` helps as well
+
+* Make sure the folder location is getting located/pointed to correctly
