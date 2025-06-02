@@ -110,6 +110,19 @@ html, body {
     background: black; 
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-size: 100% 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+    min-width: 48px;
+}
+
 body::before {
     content: "";
     position: fixed;

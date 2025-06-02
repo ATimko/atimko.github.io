@@ -73,18 +73,11 @@ title: Home
 
   <!-- About Me Card -->
   <div class="card" style="width: 500px;">
-    <div class="blur-img-wrapper" style="width:500px; height:400px; position:relative; background:black;">
+    <div style="width:100%; height:400px; position:relative; background:black;">
       <img 
         src="{{ '/assets/Aboutmecard.png' | relative_url }}" 
-        class="blur-bg"
         alt="About"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; filter: blur(12px); z-index:1; object-fit:contain;"
-      >
-      <img 
-        src="{{ '/assets/Aboutmecard.png' | relative_url }}" 
-        class="card-img-top"
-        alt="About"
-        style="position:relative; width:100%; height:100%; object-fit:contain; z-index:2;"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
       >
     </div>
     <div class="card-body">
@@ -96,18 +89,11 @@ title: Home
 
   <!-- Experience Card -->
   <div class="card" style="width: 500px;">
-    <div class="blur-img-wrapper" style="width:500px; height:400px; position:relative; background:black;">
+    <div style="width:100%; height:400px; position:relative; background:black;">
       <img 
         src="{{ '/assets/coding.png' | relative_url }}" 
-        class="blur-bg"
         alt="Experience"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; filter: blur(12px); z-index:1; object-fit:contain;"
-      >
-      <img 
-        src="{{ '/assets/coding.png' | relative_url }}" 
-        class="card-img-top"
-        alt="Experience"
-        style="position:relative; width:100%; height:100%; object-fit:contain; z-index:2;"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
       >
     </div>
     <div class="card-body">
@@ -119,19 +105,12 @@ title: Home
 
   <!-- Projects Card -->
   <div class="card" style="width: 500px;">
-    <div class="blur-img-wrapper" style="width:500px; height:400px; position:relative; background:black;">
+    <div style="width:100%; height:400px; position:relative; background:black;">
       <img 
         src="{{ '/assets/lunchapp.png' | relative_url }}" 
-        class="blur-bg"
         alt="Projects"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; filter: blur(12px); z-index:1; object-fit:contain;"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
       >
-    <img 
-      src="{{ '/assets/lunchapp.png' | relative_url }}" 
-      class="card-img-top"
-      alt="Projects"
-      style="position:relative; width:100%; height:400px; object-fit:contain; z-index:1;"
-    >
     </div>
     <div class="card-body">
       <h5 class="card-title">Projects</h5>

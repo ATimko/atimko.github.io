@@ -183,8 +183,8 @@ permalink: /experience/
       <img 
         src="{{ '/assets/Hoot.png' | relative_url }}" 
         alt="Hoot" 
-        class="rounded-3"
-        style="max-width: 100%; height: 150px; object-fit: contain;"
+        class="rounded-circle"
+        style="max-width: 100%; height: 250px; object-fit: contain;"
       >
     </div>
     <!-- Textbox on the right -->
@@ -198,10 +198,11 @@ permalink: /experience/
         display: block;
         width: 100%;
       ">
-        <h2>Hootsuite Academy - Social Media Marketing</h2>
+        <h2>Hootsuite Academy</h2>
+        <h3>Social Media Marketing</h3>
         <ul>
             <li>Obtained on February 5th, 2025</li>
-            <li>Social Media Marketing Certification indicates competency and proficiency in the tactical applications of the essential elements of social marketing, including social media strategy, community building, content marketing and social media advertising.</li>
+            <li>Social Media Marketing Certification proves competency and proficiency in the tactical applications of the essential elements of social marketing, including social media strategy, community building, content marketing and social media advertising.</li>
         </ul>
       </div>
     </div>
@@ -233,9 +234,10 @@ permalink: /experience/
         width: 100%;
       ">
         <h2>Six Sigma Global Institute</h2>
+        <h3>Data Analytics</h3>
         <ul>
             <li>Obtained on January 28th, 2020 </li>
-            <li>Data Analytics Certification includes proficiency in collecting, organizing, analyzing, and interpreting data to derive business insights. </li>
+            <li>Data Analytics Certification proves proficiency in collecting, organizing, analyzing, and interpreting data to derive business insights. </li>
         </ul>
         </div>
         </div>
