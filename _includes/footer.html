@@ -1,0 +1,46 @@
+
+<div class="py-5 border-top">
+  <div class="container">
+
+    <p class="h5 mb-3">{{ site.title | escape }}</p>
+
+    <div class="row">
+
+      <div class="col-sm">
+        <ul class="list-unstyled">
+          <li>
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+            <li>
+              <a href="mailto:{{ site.email }}">
+                {{ site.email }}
+              </a>
+            </li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+
+      <div class="col-sm text-end">
+        <p>{{- site.description | escape -}}</p>
+
+        <p>
+          <a href="https://www.linkedin.com/in/ashley-timko-5b12b4192/"><img alt="Linkedin" src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff"></a>
+          <a href="https://github.com/ATimko"><img alt="Github" src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white"></a>
+          <a href="https://portfolium.com/AshleyTimko"><img alt="Portfolium" src="https://img.shields.io/badge/Portfolium-FF4D00"></a>
+        <p>
+        
+        <p>
+          <a href="https://github.com/ATimko/atimko.github.io">Portfolio Website on Github</a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

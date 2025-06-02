@@ -1,0 +1,134 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "variables";
+@import "bootstrap/bootstrap";
+@import "syntax-highlighting";
+@import "bootstrap-4-jekyll/bootstrap-4-jekyll";
+@import "bootstrap_customization";
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar {
+    background-color: rgba(82, 65, 235, 0.692) !important; // Bootstrap primary with 85% opacity
+    /* Optional: add a blur effect */
+    backdrop-filter: blur(8px); 
+    margin-bottom: 0 !important;
+    z-index: 1;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #92d4ff !important;
+    border-bottom: 2px solid #aeeaff !important; /* Change color and thickness */
+}
+
+.navbar .nav-link.active {
+    background-color: #5241eb !important;
+    color: #fff !important;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid #aeeaff !important;
+}
+
+.nav-pills .nav-link {
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-pills .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 4px;
+    height: 3px;
+    background: #aeeaff;
+    /* or #fff for white */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.nav-pills .nav-link:hover::after,
+.nav-pills .nav-link:focus::after,
+.nav-pills .nav-link.active::after {
+    opacity: 1; 
+}
+
+.banner-top {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative;
+    z-index: 0;
+}
+
+.page-content, .container {
+    padding-top: 0 !important;
+    margin-top: 0 !important; 
+}
+
+.btn-primary {
+    background-color: hsl(241, 54%, 48%) !important; // Preferred color
+    border-color: #bab2ff !important;
+    color: #fff !important; 
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: hsl(189, 56%, 41%) !important; /* Preferred blue */
+    border-color: #94ffb4 !important;
+    color: #fff !important; 
+}
+
+.blur-img-wrapper .blur-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(12px);
+    z-index: 1;
+    object-fit: cover;
+    /* Optional: darken the edges for a vignette effect */
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, white 60%, transparent 100%);
+    
+}
+
+.blur-img-wrapper .card-img-top {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.blur-img-wrapper {
+    background: black; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('{{ "/assets/background.gif" | relative_url }}') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(10px);
+    /* Adjust blur strength as needed */
+    opacity: 1;
+    /* Adjust for more/less visibility */
+    pointer-events: none;
+}
+
+body {
+    background: url('{{ "/assets/background.gif" | relative_url }}') no-repeat center center fixed;
+    background-size: cover;
+    /* Optional: dark overlay for readability */
+    /* position: relative; */ 
+}
+
