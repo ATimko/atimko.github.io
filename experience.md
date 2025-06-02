@@ -31,8 +31,8 @@ permalink: /experience/
     <!-- Logo on the left -->
     <div class="col-md-3 text-center mb-3 mb-md-0">
       <img 
-        src="{{ '/assets/uwt.jpeg' | relative_url }}" 
-        alt="UWT Logo" 
+        src="{{ '/assets/UWT.jpeg' | relative_url }}" 
+        alt="UWTLogo" 
         class="rounded"
         style="max-width: 100%; height: 120px; object-fit: contain;"
       >
