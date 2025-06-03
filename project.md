@@ -190,7 +190,7 @@ permalink: /project/
 <div class="card" style="width: 500px;">
     <div style="width:100%; height:400px; position:relative; background:black;">
     <img 
-        src="{{ '/assets/MedicK9.gif' | relative_url }}" 
+        src="{{ '/assets/MythicalK9sWebsite.png' | relative_url }}" 
         alt="Mk9"
         style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
     >
@@ -200,7 +200,7 @@ permalink: /project/
     <p class="card-text">A fictional mobile game turned into a website.</p>
     <div>
     <span class="badge rounded-pill bg-primary">C#</span>
-    <span class="badge rounded-pill bg-success">JavaScript</span>
+    <span class="badge rounded-pill bg-success text-dark">JavaScript</span>
     <span class="badge rounded-pill bg-secondary">ASP .NET Core</span>
     <span class="badge rounded-pill bg-warning text-dark">HTML</span>
     </div>
@@ -213,6 +213,59 @@ permalink: /project/
         </div>
     </div>
 </div>
+
+
+<!-- Discord Card -->
+<div class="card" style="width: 500px;">
+    <div style="width:100%; height:400px; position:relative; background:black;">
+    <img 
+        src="{{ '/assets/Flareboticon.png' | relative_url }}" 
+        alt="Discord"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
+    >
+    </div>
+    <div class="card-body">
+    <h5 class="card-title">Discord Bot</h5>
+    <p class="card-text">Personal Discord Bot that does commands.</p>
+    <div>
+    <span class="badge rounded-pill bg-success text-dark">JavaScript</span>
+    </div>
+    <div style="height: 10px;"></div>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#discordModal">
+        Details
+    </button>
+    <span style="color: #bbb; font-size: 0.95em;">August 2019 - Present</span>
+        </div>
+    </div>
+</div>
+
+<!-- Lunch Card -->
+<div class="card" style="width: 500px;">
+    <div style="width:100%; height:400px; position:relative; background:black;">
+    <img 
+        src="{{ '/assets/lunchapp.png' | relative_url }}" 
+        alt="Lunch"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
+    >
+    </div>
+    <div class="card-body">
+    <h5 class="card-title">Lunch App</h5>
+    <p class="card-text">A simple ordering form for food.</p>
+    <div>
+    <span class="badge rounded-pill bg-primary">C#</span>
+    <span class="badge rounded-pill bg-secondary">.NET Core</span>
+    </div>
+    <div style="height: 10px;"></div>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lunchModal">
+        Details
+    </button>
+    <span style="color: #bbb; font-size: 0.95em;">Jan 2019</span>
+        </div>
+    </div>
+</div>
+
 <!-- MessageApp Modal -->
 <div class="modal fade" id="messageappModal" aria-labelledby="messagemappModalLabel" aria-hidden="true" data-bs-backdrop="false">
   <div class="modal-dialog modal-dialog-centered">
@@ -281,7 +334,7 @@ permalink: /project/
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="{{ '/assets/MythicalK9sWebsite.png' | relative_url }}" alt="Tetris" style="max-width: 100%; height: 500px; object-fit:cover; margin-bottom: 1rem;">
+        <img src="{{ '/assets/MedicK9.gif' | relative_url }}" alt="Tetris" style="max-width: 100%; height: 500px; object-fit:cover; margin-bottom: 1rem;">
         <p>This application was made in Visual Studios using ASP .NET Core, C#, JavaScript and HTML, it also uses Bootstrap and used to be on Microsoft Azure for hosting. The website is called Mythical Canines where it's a Fantasy Mobile based game. This website includes game updates, animations, game explanations and more!</p>
       </div>
       <div class="modal-footer">
@@ -291,6 +344,46 @@ permalink: /project/
     </div>
   </div>
 </div>
+
+<!-- Discord Modal -->
+<div class="modal fade" id="discordModal" aria-labelledby="DiscordModalLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DiscordModalLabel">Discord Bot</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="{{ '/assets/FlarebotImage.png' | relative_url }}" alt="Discord" style="max-width: 100%; height: 500px; object-fit:cover; margin-bottom: 1rem;">
+        <p>This application was made in Visual Studios Code using JavaScript and NPM plugins. This is a personal Discord bot I have made on my own time. It does silly commands such as magic 8 ball, can give randomized photos and gifs, ascii art, listen to music and many more!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lunch Modal -->
+<div class="modal fade" id="lunchModal" aria-labelledby="LunchModalLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LunchModalLabel">Lunch App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="{{ '/assets/LunchAppCode.png' | relative_url }}" alt="Lunch" style="max-width: 100%; height: 500px; object-fit:cover; margin-bottom: 1rem;">
+        <p>This application was made in Visual Studios using C# and .NET. It's a simple lunch form that orders food including taxes and add-ons to the meal total cost.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://github.com/ATimko/LunchOrderApp" target="_blank" rel="noopener" class="btn btn-primary">Go to Github Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Auto scroll to the modal windows -->
 <script>
@@ -306,5 +399,3 @@ permalink: /project/
     });
   });
 </script>
-
-<div style="height: 40px;"></div>
