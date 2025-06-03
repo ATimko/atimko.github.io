@@ -103,10 +103,10 @@ permalink: /project/
 <div style="height: 40px;"></div>
 
 <!-- Cards Section -->
-<!-- <div class="container my-4">
-  <div class="d-flex flex-wrap justify-content-center gap-4"> -->
-<div class="container my-4" style="padding-left:0; padding-right:0;">
+<div class="container my-4">
 <div class="d-flex flex-wrap justify-content-center gap-4">
+<!-- <div class="container my-4" style="padding-left:0; padding-right:0;">
+<div class="d-flex flex-wrap justify-content-center gap-4"> -->
 
 <!-- MessageApp Card -->
 <div class="card" style="width: 500px;">
