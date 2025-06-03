@@ -145,3 +145,28 @@ body {
     /* position: relative; */ 
 }
 
+// .modal-backdrop {
+//     z-index: 1050 !important;
+// }
+
+// .modal {
+//     z-index: 2000 !important; 
+// }
+modal-position {
+    position: fixed;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%); 
+}
+
+.modal::after {
+    content: "";
+    background: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: -300px;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
