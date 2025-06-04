@@ -1,5 +1,5 @@
 
-# Portfoilio Project
+# Portfolio Project and Personal Website
 
 [![BootStrap](https://img.shields.io/badge/Bootstrap%20-5.3.6-brightgreen.svg?style=flat)](https://getbootstrap.com/)
 [![Ruby](https://img.shields.io/badge/Ruby%20-3.5.0-brightgreen.svg?style=flat)](https://www.ruby-lang.org/en/downloads/)
