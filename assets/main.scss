@@ -14,11 +14,13 @@ html, body {
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
     background-color: rgba(82, 65, 235, 0.692) !important; // Bootstrap primary with 85% opacity
     /* Optional: add a blur effect */
     backdrop-filter: blur(8px); 
     margin-bottom: 0 !important;
-    z-index: 1;
+    z-index: 1030;
 }
 
 .navbar .nav-link:hover,

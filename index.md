@@ -33,8 +33,9 @@ title: Home
   "></div>
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0 2px 8px #000; width: 100vw;" class="text-center">
     <h2>Ashley Timko's Portfolio</h2>
-    <p>Hello, my name is Ashley Timko<br>
-    I'm currently finishing up my bachelor's degree in Computer Science. I'm also minoring in Business Data Analytics.
+    <p>Hello, my name is Ashley Timko!<br>
+    I've completed my bachelor's degree in Computer Science and minored in Business Data Analytics.<br> 
+    Currectly building UI/UX personal projects.
     </p>
   </div>
 </div>
