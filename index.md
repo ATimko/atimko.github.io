@@ -3,124 +3,131 @@ layout: page
 title: Home
 ---
 
-<!-- Cover image at the top -->
-<!--<div style="width: 100vw; height: 500px; overflow: hidden; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
-  <img 
-    src="{{ '/assets/cover.png' | relative_url }}" 
-    alt="Cover Image" 
-    style="width: 300vw; height: 400px; object-fit: cover; display: block; margin: 0; padding: 0;"
-  >
-</div> -->
-<!-- Cover banner (fills directly below navbar) -->
-<div class="banner-top" style="width: 100vw; height: 450px; overflow: hidden; position: relative; left: 50%; margin-left: -50vw; margin-right: -50vw;">
-  <img 
-    src="{{ '/assets/cover.png' | relative_url }}" 
-    alt="Cover Image" 
-    style="width: 100vw; height: 450px; object-fit: cover; display: block; margin: 0; padding: 0;"
-  >
-  <!-- Blurry line across the center -->
-  <div style="
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100vw;
-    height: 150px;
-    transform: translateY(-50%);
-    background: rgba(148, 148, 148, 0.19);
-    filter: blur(8px);
-    z-index: 1;
-    pointer-events: none;
-  "></div>
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0 2px 8px #000; width: 100vw;" class="text-center">
-    <h2>Ashley Timko's Portfolio</h2>
-    <p>Hello, my name is Ashley Timko!<br>
-    I've completed my bachelor's degree in Computer Science and minored in Business Data Analytics.<br> 
-    Currectly building UI/UX personal projects.
-    </p>
-  </div>
-</div>
-<!-- ...rest of your content... -->
-
-<!--<div class="container my-4">
-  <div class="btn-group" role="group" aria-label="Navigation Buttons">
-    <a class="btn btn-primary" href="{{ '/' | relative_url }}">Home</a>
-    <a class="btn btn-primary" href="{{ '/about/' | relative_url }}">About Me</a>
-  </div>
-</div> -->
-<div style="height: 40px;"></div>
-
-<!-- Mini About Me -->
-<div class="text-center my-4" style="max-width: 1200px; margin: 0 auto;">
-  <div style="
-    background: rgba(30,30,30,0.92);
-    color: #fff;
-    padding: 2rem 2rem 1.5rem 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-    display: inline-block;
-    width: 100%;
-  ">
-  <h1 class="text-center">Introduction</h1>
-  <div style="height: 40px;"></div>
-      <p>I'm currently attending University of Washington-Tacoma Campus, pursuing a degree in Computer Science and minoring in Business Data Analytics. I'm graduating in June 13, 2025, and have prior programming knowledge before coming to University of Washington Tacoma. I went to 2 colleges (Clover Park for core technology classes done and Pierce College with some computer science plus some general education classes out of the way) to expand on my degree, I also have some hobbies in drawing and graphic design.</p>
-  </div>
-</div>
-
-<div style="height: 40px;"></div>
-
-<!-- Cards Section -->
-<div class="container my-4">
-  <div class="d-flex flex-wrap justify-content-center gap-4">
-
-  <!-- About Me Card -->
-  <div class="card" style="width: 500px;">
-    <div style="width:100%; height:400px; position:relative; background:black;">
-      <img 
-        src="{{ '/assets/Aboutmecard.png' | relative_url }}" 
-        alt="About"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
-      >
+<main id="main">
+  <section class="portfolio-hero" aria-labelledby="hero-title">
+    <div class="portfolio-hero-content">
+      <p class="portfolio-eyebrow">Computer Science · Business Data Analytics</p>
+      <h1 id="hero-title">Ashley<br>Timko</h1>
+      <h2>UX/UI Designer and Data Analyst</h2>
+      <p class="portfolio-hero-copy">
+        I’m a University of Washington Tacoma graduate with a degree in Computer Science
+        and a minor in Business Data Analytics. I enjoy building software, designing
+        thoughtful interfaces, and turning ideas into practical projects.
+      </p>
+      <div class="portfolio-actions">
+        <a class="portfolio-button portfolio-button-primary" href="{{ '/project/' | relative_url }}">Explore my projects</a>
+        <a class="portfolio-button portfolio-button-blue" href="{{ '/about/' | relative_url }}">More about me</a>
+      </div>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">About Me</h5>
-      <p class="card-text">More in-depth information about me!</p>
-      <a href="{{ '/about/' | relative_url }}" class="btn btn-primary">Go to About Me Page</a>
+    <div class="portfolio-portrait-wrap">
+      <img class="portfolio-portrait" src="{{ '/assets/aboutme.png' | relative_url }}" alt="Portrait of Ashley Timko">
     </div>
-  </div>
+  </section>
 
-  <!-- Experience Card -->
-  <div class="card" style="width: 500px;">
-    <div style="width:100%; height:400px; position:relative; background:black;">
-      <img 
-        src="{{ '/assets/coding.png' | relative_url }}" 
-        alt="Experience"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
-      >
+  <section class="portfolio-stats" aria-label="Education and certifications">
+    <div class="portfolio-stat">
+      <strong>2025</strong>
+      <span>UW Tacoma graduate</span>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Experience</h5>
-      <p class="card-text">What did I learn over the years</p>
-      <a href="{{ '/experience/' | relative_url }}" class="btn btn-primary">Go to Experience Page</a>
+    <div class="portfolio-stat">
+      <strong>B.S.</strong>
+      <span>Computer Science</span>
     </div>
-  </div>
+    <div class="portfolio-stat">
+      <strong>Minor</strong>
+      <span>Business Data Analytics</span>
+    </div>
+    <div class="portfolio-stat">
+      <strong>2</strong>
+      <span>Professional certifications</span>
+    </div>
+  </section>
 
-  <!-- Projects Card -->
-  <div class="card" style="width: 500px;">
-    <div style="width:100%; height:400px; position:relative; background:black;">
-      <img 
-        src="{{ '/assets/lunchapp.png' | relative_url }}" 
-        alt="Projects"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;"
-      >
+  <section class="portfolio-section" aria-labelledby="projects-title">
+    <div class="portfolio-section-heading">
+      <p class="portfolio-section-kicker">Selected work</p>
+      <h2 id="projects-title">Projects built with curiosity</h2>
+      <p>A few examples of the software and creative projects I’ve worked on over the years.</p>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Projects</h5>
-      <p class="card-text">Projects I've done through out the years</p>
-      <a href="{{ '/project/' | relative_url }}" class="btn btn-primary">Go to Projects Page</a>
+
+    <div class="portfolio-project-grid">
+      <article class="portfolio-project-card">
+        <img class="portfolio-project-image" src="{{ '/assets/messageapp.png' | relative_url }}" alt="Screenshot of the Message App" loading="lazy">
+        <div class="portfolio-project-body">
+          <h3>Message App</h3>
+          <p>A real-time messaging application for connecting with other users.</p>
+          <div class="portfolio-tags" aria-label="Technologies">
+            <span class="portfolio-tag">Java</span>
+            <span class="portfolio-tag">React</span>
+            <span class="portfolio-tag">TypeScript</span>
+            <span class="portfolio-tag">SQL</span>
+          </div>
+          <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
+        </div>
+      </article>
+
+      <article class="portfolio-project-card">
+        <img class="portfolio-project-image" src="{{ '/assets/MythicalCanines.png' | relative_url }}" alt="Preview of the Fantasy Dog website" loading="lazy">
+        <div class="portfolio-project-body">
+          <h3>Fantasy Dog Web App</h3>
+          <p>A fictional mobile game brought to life as a C# and ASP.NET Core website.</p>
+          <div class="portfolio-tags" aria-label="Technologies">
+            <span class="portfolio-tag">C#</span>
+            <span class="portfolio-tag">ASP.NET Core</span>
+            <span class="portfolio-tag">JavaScript</span>
+          </div>
+          <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
+        </div>
+      </article>
+
+      <article class="portfolio-project-card">
+        <img class="portfolio-project-image" src="{{ '/assets/TriviaMaze.png' | relative_url }}" alt="Screenshot of the Trivia Maze game" loading="lazy">
+        <div class="portfolio-project-body">
+          <h3>Trivia Maze</h3>
+          <p>A Java maze game that combines navigation with trivia questions.</p>
+          <div class="portfolio-tags" aria-label="Technologies">
+            <span class="portfolio-tag">Java</span>
+          </div>
+          <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
+        </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  </div>
-</div>
+  <section class="portfolio-section" aria-labelledby="about-title">
+    <div class="portfolio-section-heading">
+      <p class="portfolio-section-kicker">A little about me</p>
+      <h2 id="about-title">Code, creativity, and continuous learning</h2>
+    </div>
+    <div class="portfolio-about-panel">
+      <p class="portfolio-about-copy">
+        My interest in programming started with game design and grew into a love of
+        building projects from the ground up. I’ve explored both frontend and backend
+        development, and I bring the same curiosity to drawing, animation, and graphic
+        design. My studies in data analytics also strengthened my SQL and database skills.
+      </p>
+      <div class="portfolio-tags" aria-label="Areas of interest">
+        <span class="portfolio-tag">Software development</span>
+        <span class="portfolio-tag">UI/UX</span>
+        <span class="portfolio-tag">Data analytics</span>
+        <span class="portfolio-tag">Drawing &amp; animation</span>
+      </div>
+      <div class="portfolio-actions">
+        <a class="portfolio-button portfolio-button-blue" href="{{ '/about/' | relative_url }}">Read more about me</a>
+        <a class="portfolio-button portfolio-button-blue" href="{{ '/experience/' | relative_url }}">Education &amp; certifications</a>
+      </div>
+    </div>
+  </section>
 
-<div style="height: 40px;"></div>
+  <section class="portfolio-contact-panel" aria-labelledby="contact-title">
+    <div>
+      <p class="portfolio-section-kicker">Get in touch</p>
+      <h2 id="contact-title">Let’s connect</h2>
+      <p>Interested in my work? Find me on GitHub or send me an email.</p>
+    </div>
+    <div class="portfolio-actions">
+      <a class="portfolio-button portfolio-button-primary" href="mailto:{{ site.email }}">Email me</a>
+      <a class="portfolio-button portfolio-button-blue" href="https://github.com/ATimko" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+    </div>
+  </section>
+</main>

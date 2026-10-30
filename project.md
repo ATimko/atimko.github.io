@@ -4,47 +4,13 @@ title: Projects
 permalink: /project/
 ---
 
-<!-- Blurry line with sharp, centered text -->
-<div style="
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  min-width: 100vw;
-  max-width: 100vw;
-  height: 150px;
-  margin: 0;
-  overflow: hidden;
-">
-  <!-- Blurry background -->
-  <div style="
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    width: 100vw;
-    height: 100%;
-    background: rgba(148, 148, 148, 0.19);
-    filter: blur(8px);
-    z-index: 1;
-    pointer-events: none;
-  "></div>
-  <!-- Centered, sharp text -->
-  <div style="
-    position: relative;
-    z-index: 2;
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  ">
-    <h1 style="color: white; text-shadow: 0 2px 8px #000; margin: 0; text-align: center;">
-      Favorite Featured Projects
-    </h1>
-  </div>
+<div class="portfolio-project-banner">
+  <p class="portfolio-section-kicker">Selected work</p>
+  <h1>Favorite featured projects</h1>
 </div>
 
 <!-- Bootstrap Carousel -->
-<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 100vw; margin: 0px 0 0 0; z-index:2; position:relative; left: 50%; transform: translateX(-50%);">
+<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner rounded shadow">
     <!-- Slide 1 -->
     <div class="carousel-item active">
@@ -124,7 +90,7 @@ permalink: /project/
     <span class="badge rounded-pill bg-danger">Java</span>
     <span class="badge rounded-pill bg-success">React</span>
     <span class="badge rounded-pill bg-info">TypeScript</span>
-    <span class="badge rounded-pill bg-warning text-dark">SQL</span>
+    <span class="badge rounded-pill bg-warning text-white">SQL</span>
     </div>
     <div style="height: 10px;"></div>
     <div class="d-flex justify-content-between align-items-center mt-3">
@@ -202,7 +168,7 @@ permalink: /project/
     <span class="badge rounded-pill bg-primary">C#</span>
     <span class="badge rounded-pill bg-success text-dark">JavaScript</span>
     <span class="badge rounded-pill bg-secondary">ASP .NET Core</span>
-    <span class="badge rounded-pill bg-warning text-dark">HTML</span>
+    <span class="badge rounded-pill bg-warning text-white">HTML</span>
     </div>
     <div style="height: 10px;"></div>
     <div class="d-flex justify-content-between align-items-center mt-3">
