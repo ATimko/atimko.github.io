@@ -1,10 +1,37 @@
 const translateButton = document.getElementById("translate-button");
 const translatePanel = document.getElementById("translate-panel");
 const translateStatus = document.getElementById("translate-status");
+const languageSearch = document.getElementById("translate-language-search");
 const googleTranslateContainer = document.getElementById("google-translate-widget");
 let googleTranslateLoadPromise;
 let googleTranslateInitialized = false;
 let languageSelectObserver;
+
+function filterLanguageOptions() {
+  const languageSelect = googleTranslateContainer.querySelector("select.goog-te-combo");
+  if (!languageSelect) {
+    return;
+  }
+
+  const searchTerm = languageSearch.value.trim().toLocaleLowerCase();
+  let visibleLanguageCount = 0;
+
+  Array.from(languageSelect.options).forEach((option, index) => {
+    const matchesSearch = index === 0 || option.textContent.toLocaleLowerCase().includes(searchTerm);
+    option.hidden = !matchesSearch;
+    if (index > 0 && matchesSearch) {
+      visibleLanguageCount += 1;
+    }
+  });
+
+  if (searchTerm && visibleLanguageCount === 0) {
+    translateStatus.textContent = "No languages match your search.";
+  } else {
+    translateStatus.textContent = searchTerm
+      ? `${visibleLanguageCount} matching languages. Select one to translate.`
+      : "Scroll the list or search by language name.";
+  }
+}
 
 function prepareLanguageSelect() {
   const languageSelect = googleTranslateContainer.querySelector("select.goog-te-combo");
@@ -14,7 +41,8 @@ function prepareLanguageSelect() {
 
   languageSelect.size = 8;
   languageSelect.setAttribute("aria-label", "Choose a language");
-  translateStatus.textContent = "Scroll the list or type a language name to find it.";
+  languageSearch.disabled = false;
+  filterLanguageOptions();
   languageSelectObserver?.disconnect();
   return true;
 }
@@ -91,6 +119,8 @@ function loadGoogleTranslate() {
 
   return googleTranslateLoadPromise;
 }
+
+languageSearch.addEventListener("input", filterLanguageOptions);
 
 translateButton.addEventListener("click", async () => {
   const isOpening = translatePanel.hidden;

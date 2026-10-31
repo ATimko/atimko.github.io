@@ -185,6 +185,36 @@ body {
     font-weight: 700;
 }
 
+.translate-search-label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--portfolio-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.translate-search {
+    display: block;
+    width: 100%;
+    min-height: 2.75rem;
+    margin-bottom: 0.65rem;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid var(--portfolio-line);
+    border-radius: 0.5rem;
+    color: var(--portfolio-text);
+    background: var(--portfolio-panel);
+    font: inherit;
+}
+
+.translate-search::placeholder {
+    color: var(--portfolio-muted);
+}
+
+.translate-search:focus-visible {
+    outline: 2px solid var(--portfolio-accent);
+    outline-offset: 2px;
+}
+
 .translate-status {
     margin: 0 0 0.75rem;
     color: var(--portfolio-muted);
