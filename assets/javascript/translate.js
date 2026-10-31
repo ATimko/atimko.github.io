@@ -4,6 +4,29 @@ const translateStatus = document.getElementById("translate-status");
 const googleTranslateContainer = document.getElementById("google-translate-widget");
 let googleTranslateLoadPromise;
 let googleTranslateInitialized = false;
+let languageSelectObserver;
+
+function prepareLanguageSelect() {
+  const languageSelect = googleTranslateContainer.querySelector("select.goog-te-combo");
+  if (!languageSelect) {
+    return false;
+  }
+
+  languageSelect.size = 8;
+  languageSelect.setAttribute("aria-label", "Choose a language");
+  translateStatus.textContent = "Scroll the list or type a language name to find it.";
+  languageSelectObserver?.disconnect();
+  return true;
+}
+
+function observeLanguageSelect() {
+  if (prepareLanguageSelect()) {
+    return;
+  }
+
+  languageSelectObserver = new MutationObserver(prepareLanguageSelect);
+  languageSelectObserver.observe(googleTranslateContainer, { childList: true, subtree: true });
+}
 
 function initializeGoogleTranslate() {
   if (googleTranslateInitialized) {
@@ -18,12 +41,12 @@ function initializeGoogleTranslate() {
     {
       pageLanguage: "en",
       autoDisplay: false,
-      layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+      layout: window.google.translate.TranslateElement.InlineLayout.HORIZONTAL
     },
     googleTranslateContainer.id
   );
   googleTranslateInitialized = true;
-  translateStatus.textContent = "Choose a language to translate the page.";
+  observeLanguageSelect();
 }
 
 function loadGoogleTranslate() {

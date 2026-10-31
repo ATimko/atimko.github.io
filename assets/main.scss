@@ -110,6 +110,17 @@ body {
     border-color: var(--portfolio-line);
 }
 
+.navbar .navbar-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    margin-left: 0.75rem;
+}
+
+.navbar .navbar-tools .settings-button {
+    margin-left: 0;
+}
+
 .navbar .nav-link:hover,
 .navbar .nav-link:focus-visible {
     color: var(--navbar-accent) !important;
@@ -126,7 +137,6 @@ body {
     width: 2.75rem;
     height: 2.75rem;
     place-items: center;
-    margin-left: 0.35rem;
     padding: 0.5rem;
     border: 0;
     background: transparent;
@@ -191,8 +201,27 @@ body {
 }
 
 .translate-panel .goog-te-combo {
+    display: block;
+    width: 100%;
+    min-height: 12rem;
     max-width: 100%;
     margin: 0.25rem 0;
+    padding: 0.25rem;
+    border: 1px solid var(--portfolio-line);
+    border-radius: 0.5rem;
+    color: var(--portfolio-text);
+    background: var(--portfolio-panel);
+    font: inherit;
+}
+
+.translate-panel .goog-te-combo option {
+    min-height: 2.5rem;
+    padding: 0.55rem;
+}
+
+.translate-panel .goog-te-combo:focus-visible {
+    outline: 2px solid var(--portfolio-accent);
+    outline-offset: 2px;
 }
 
 .settings-modal {
@@ -827,6 +856,26 @@ modal-position {
 @media (prefers-reduced-motion: reduce) {
     .back-to-top {
         transition: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-tools {
+        order: 1;
+        margin-left: auto;
+    }
+
+    .navbar .navbar-toggler {
+        order: 2;
+        margin-left: 0.15rem;
+    }
+
+    .navbar .navbar-collapse {
+        order: 3;
+    }
+
+    .navbar .translate-panel {
+        right: -5.5rem;
     }
 }
 
