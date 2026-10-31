@@ -39,15 +39,7 @@ permalink: /experience/
     </div>
     <!-- Textbox on the right -->
     <div class="col-md-7">
-      <div style="
-        background: rgba(30,30,30,0.92);
-        color: #fff;
-        padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-        display: block;
-        width: 100%;
-      ">
+      <div class="portfolio-about-panel">
         <h2>University of Washington Tacoma</h2>
         <ul>
         <li>
@@ -75,15 +67,7 @@ permalink: /experience/
     </div>
     <!-- Textbox on the right -->
     <div class="col-md-7">
-      <div style="
-        background: rgba(30,30,30,0.92);
-        color: #fff;
-        padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-        display: block;
-        width: 100%;
-      ">
+      <div class="portfolio-about-panel">
         <h2>Clover Park Technical College</h2>
         <ul>
             <li>Graduated in 2019 with an Associate's degree. Lots of programming classes and main knowledge came from here.</li>
@@ -111,15 +95,7 @@ permalink: /experience/
     </div>
     <!-- Textbox on the right -->
     <div class="col-md-7">
-      <div style="
-        background: rgba(30,30,30,0.92);
-        color: #fff;
-        padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-        display: block;
-        width: 100%;
-      ">
+      <div class="portfolio-about-panel">
         <h2>Pierce College</h2>
         <ul>
             <li>Attended in: 2020</li>
@@ -146,15 +122,7 @@ permalink: /experience/
     </div>
     <!-- Textbox on the right -->
     <div class="col-md-7">
-      <div style="
-        background: rgba(30,30,30,0.92);
-        color: #fff;
-        padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-        display: block;
-        width: 100%;
-      ">
+      <div class="portfolio-about-panel">
         <h2>Emerald Ridge High School</h2>
         <ul>
             <li>Graduated in 2018</li>
@@ -189,15 +157,7 @@ permalink: /experience/
     </div>
     <!-- Textbox on the right -->
     <div class="col-md-7">
-      <div style="
-        background: rgba(30,30,30,0.92);
-        color: #fff;
-        padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-        display: block;
-        width: 100%;
-      ">
+      <div class="portfolio-about-panel">
         <h2>Hootsuite Academy</h2>
         <h3>Social Media Marketing</h3>
         <ul>
@@ -224,15 +184,7 @@ permalink: /experience/
     </div>
     <!-- Textbox on the right -->
     <div class="col-md-7">
-      <div style="
-        background: rgba(30,30,30,0.92);
-        color: #fff;
-        padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 32px rgba(0,0,0,0.25);
-        display: block;
-        width: 100%;
-      ">
+      <div class="portfolio-about-panel">
         <h2>Six Sigma Global Institute</h2>
         <h3>Data Analytics</h3>
         <ul>

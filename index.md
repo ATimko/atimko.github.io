@@ -4,11 +4,13 @@ title: Home
 ---
 
 <main id="main">
+  <!-- Introduces Ashley, her background, and links to key pages. -->
   <section class="portfolio-hero" aria-labelledby="hero-title">
     <div class="portfolio-hero-content">
-      <p class="portfolio-eyebrow">Computer Science · Business Data Analytics</p>
-      <h1 id="hero-title">Ashley<br>Timko</h1>
-      <h2>UX/UI Designer and Data Analyst</h2>
+      <!-- The highlighted span uses the accent color defined in main.scss. -->
+      <p class="portfolio-eyebrow">Computer Science · <span class="portfolio-eyebrow-highlight">Business Data Analytics</span></p>
+      <h1 id="hero-title">Ashley Timko</h1>
+      <h2 class="portfolio-gradient-text">UX/UI Designer and Data Analyst</h2>
       <p class="portfolio-hero-copy">
         I’m a University of Washington Tacoma graduate with a degree in Computer Science
         and a minor in Business Data Analytics. I enjoy building software, designing
@@ -19,11 +21,13 @@ title: Home
         <a class="portfolio-button portfolio-button-blue" href="{{ '/about/' | relative_url }}">More about me</a>
       </div>
     </div>
+    <!-- Displays the profile portrait beside the introduction. -->
     <div class="portfolio-portrait-wrap">
       <img class="portfolio-portrait" src="{{ '/assets/aboutme.png' | relative_url }}" alt="Portrait of Ashley Timko">
     </div>
   </section>
 
+  <!-- Summarizes education and certification details. -->
   <section class="portfolio-stats" aria-label="Education and certifications">
     <div class="portfolio-stat">
       <strong>2025</strong>
@@ -43,68 +47,71 @@ title: Home
     </div>
   </section>
 
+  <!-- Shows selected projects, their summaries, technologies, and details links. -->
   <section class="portfolio-section" aria-labelledby="projects-title">
     <div class="portfolio-section-heading">
       <p class="portfolio-section-kicker">Selected work</p>
-      <h2 id="projects-title">Projects built with curiosity</h2>
+      <h2 id="projects-title" class="portfolio-gradient-text">Projects built with curiosity</h2>
       <p>A few examples of the software and creative projects I’ve worked on over the years.</p>
     </div>
 
-    <div class="portfolio-project-grid">
-      <article class="portfolio-project-card">
-        <img class="portfolio-project-image" src="{{ '/assets/messageapp.png' | relative_url }}" alt="Screenshot of the Message App" loading="lazy">
-        <div class="portfolio-project-body">
-          <h3>Message App</h3>
-          <p>A real-time messaging application for connecting with other users.</p>
-          <div class="portfolio-tags" aria-label="Technologies">
-            <span class="portfolio-tag">Java</span>
-            <span class="portfolio-tag">React</span>
-            <span class="portfolio-tag">TypeScript</span>
-            <span class="portfolio-tag">SQL</span>
-          </div>
-          <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
+  <!-- Each card represents one featured project. -->
+  <div class="portfolio-project-grid">
+    <article class="portfolio-project-card">
+      <img class="portfolio-project-image" src="{{ '/assets/messageapp.png' | relative_url }}" alt="Screenshot of the Message App" loading="lazy">
+      <div class="portfolio-project-body">
+        <h3>Message App</h3>
+        <p>A real-time messaging application for connecting with other users.</p>
+        <div class="portfolio-tags" aria-label="Technologies">
+          <span class="portfolio-tag">Java</span>
+          <span class="portfolio-tag">React</span>
+          <span class="portfolio-tag">TypeScript</span>
+          <span class="portfolio-tag">SQL</span>
         </div>
-      </article>
+        <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
+      </div>
+    </article>
 
-      <article class="portfolio-project-card">
-        <img class="portfolio-project-image" src="{{ '/assets/MythicalCanines.png' | relative_url }}" alt="Preview of the Fantasy Dog website" loading="lazy">
-        <div class="portfolio-project-body">
-          <h3>Fantasy Dog Web App</h3>
-          <p>A fictional mobile game brought to life as a C# and ASP.NET Core website.</p>
-          <div class="portfolio-tags" aria-label="Technologies">
-            <span class="portfolio-tag">C#</span>
-            <span class="portfolio-tag">ASP.NET Core</span>
-            <span class="portfolio-tag">JavaScript</span>
-          </div>
-          <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
-        </div>
-      </article>
-
-      <article class="portfolio-project-card">
-        <img class="portfolio-project-image" src="{{ '/assets/TriviaMaze.png' | relative_url }}" alt="Screenshot of the Trivia Maze game" loading="lazy">
-        <div class="portfolio-project-body">
-          <h3>Trivia Maze</h3>
-          <p>A Java maze game that combines navigation with trivia questions.</p>
-          <div class="portfolio-tags" aria-label="Technologies">
-            <span class="portfolio-tag">Java</span>
-          </div>
-          <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
-        </div>
-      </article>
+  <article class="portfolio-project-card">
+    <img class="portfolio-project-image" src="{{ '/assets/MythicalCanines.png' | relative_url }}" alt="Preview of the Fantasy Dog website" loading="lazy">
+    <div class="portfolio-project-body">
+      <h3>Fantasy Dog Web App</h3>
+      <p>A fictional mobile game brought to life as a C# and ASP.NET Core website.</p>
+      <div class="portfolio-tags" aria-label="Technologies">
+        <span class="portfolio-tag">C#</span>
+        <span class="portfolio-tag">ASP.NET Core</span>
+        <span class="portfolio-tag">JavaScript</span>
+      </div>
+      <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
     </div>
-  </section>
+  </article>
 
+  <article class="portfolio-project-card">
+    <img class="portfolio-project-image" src="{{ '/assets/TriviaMaze.png' | relative_url }}" alt="Screenshot of the Trivia Maze game" loading="lazy">
+    <div class="portfolio-project-body">
+      <h3>Trivia Maze</h3>
+      <p>A Java maze game that combines navigation with trivia questions.</p>
+      <div class="portfolio-tags" aria-label="Technologies">
+        <span class="portfolio-tag">Java</span>
+      </div>
+      <a class="portfolio-card-link" href="{{ '/project/' | relative_url }}">View project details &rarr;</a>
+    </div>
+  </article>
+  </div>
+</section>
+
+  <!-- Shares an about summary, interests, and links to more information. -->
   <section class="portfolio-section" aria-labelledby="about-title">
     <div class="portfolio-section-heading">
       <p class="portfolio-section-kicker">A little about me</p>
-      <h2 id="about-title">Code, creativity, and continuous learning</h2>
+      <h2 id="about-title" class="portfolio-gradient-text">Code, creativity, and continuous learning</h2>
     </div>
     <div class="portfolio-about-panel">
       <p class="portfolio-about-copy">
         My interest in programming started with game design and grew into a love of
         building projects from the ground up. I’ve explored both frontend and backend
         development, and I bring the same curiosity to drawing, animation, and graphic
-        design. My studies in data analytics also strengthened my SQL and database skills.
+        design. My studies in business data analytics also strengthened my SQL and database skills.
       </p>
       <div class="portfolio-tags" aria-label="Areas of interest">
         <span class="portfolio-tag">Software development</span>
@@ -119,6 +126,7 @@ title: Home
     </div>
   </section>
 
+  <!-- Provides email and GitHub contact links. -->
   <section class="portfolio-contact-panel" aria-labelledby="contact-title">
     <div>
       <p class="portfolio-section-kicker">Get in touch</p>
@@ -127,6 +135,7 @@ title: Home
     </div>
     <div class="portfolio-actions">
       <a class="portfolio-button portfolio-button-primary" href="mailto:{{ site.email }}">Email me</a>
+      <!-- Opens the GitHub profile in a new tab without sharing window access. -->
       <a class="portfolio-button portfolio-button-blue" href="https://github.com/ATimko" target="_blank" rel="noopener noreferrer">GitHub profile</a>
     </div>
   </section>
